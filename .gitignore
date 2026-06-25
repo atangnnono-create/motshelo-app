@@ -216,3 +216,14 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+# Environment variables
+.env
+
+# Node
+node_modules/
+dist/
+
+# Sensitive files
+service-account*.json
+*.key
+secrets*.json
