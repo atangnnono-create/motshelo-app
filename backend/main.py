@@ -1,6 +1,6 @@
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
-from backend.routes import members, loans, contributions, penalties, dividends
+from routes import members, loans, contributions, penalties, dividends
 
 app = FastAPI(
     title="Motshelo API",
