@@ -1,6 +1,9 @@
-import { useState } from 'react'
 import { BrowserRouter, Routes, Route, Link } from 'react-router-dom'
 import Members from './pages/Members'
+import Loans from './pages/Loans'
+import Contributions from './pages/Contributions'
+import Penalties from './pages/Penalties'
+import Dividends from './pages/Dividends'
 
 function App() {
   return (
@@ -18,6 +21,10 @@ function App() {
         <hr />
         <Routes>
           <Route path="/members" element={<Members />} />
+          <Route path="/loans" element={<Loans />} />
+          <Route path="/contributions" element={<Contributions />} />
+          <Route path="/penalties" element={<Penalties />} />
+          <Route path="/dividends" element={<Dividends />} />
         </Routes>
       </div>
     </BrowserRouter>
