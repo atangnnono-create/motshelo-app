@@ -1,6 +1,6 @@
 from fastapi import APIRouter
-from backend.database import supabase
-from backend.models import Member
+from database import supabase
+from models import Member
 
 router = APIRouter()
 
