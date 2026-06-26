@@ -1,6 +1,6 @@
 from fastapi import APIRouter
-from backend.database import supabase
-from backend.models import Penalty
+from database import supabase
+from models import Penalty
 
 router = APIRouter()
 
