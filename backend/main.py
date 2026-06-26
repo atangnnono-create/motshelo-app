@@ -1,5 +1,6 @@
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
+from backend.routes import members, loans, contributions, penalties, dividends
 
 app = FastAPI(
     title="Motshelo API",
@@ -13,6 +14,12 @@ app.add_middleware(
     allow_methods=["*"],
     allow_headers=["*"],
 )
+
+app.include_router(members.router)
+app.include_router(loans.router)
+app.include_router(contributions.router)
+app.include_router(penalties.router)
+app.include_router(dividends.router)
 
 @app.get("/")
 def root():
